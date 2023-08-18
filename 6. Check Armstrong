@@ -1,0 +1,13 @@
+bool checkArmstrong(int n){
+	//Write your code here
+	int size=to_string(n).size();
+	int num=n;
+	int sum=0;
+	while(n>0){
+		int rem=n%10;
+		sum+=pow(rem, size);
+		n/=10;
+	}
+	if(sum==num)	return true;
+	return false;
+}
