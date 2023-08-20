@@ -1,0 +1,15 @@
+#include <bits/stdc++.h> 
+#include <vector>
+
+vector < int > termsOfAP(int x) {
+    // Write your code here.
+    vector <int> sol; 
+    int cur_trm = 0,index = 1; 
+    while( sol.size() != x){
+        cur_trm = (3 * index) + 2;
+        if (cur_trm % 4 != 0 ) sol.emplace_back(cur_trm); 
+        index++; 
+    }
+
+    return sol;
+}
