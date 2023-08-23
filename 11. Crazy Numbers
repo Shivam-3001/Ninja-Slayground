@@ -1,0 +1,21 @@
+#include <bits/stdc++.h> 
+vector < vector < int > > numberPattern(int n) {
+
+  // Write your code here
+  int a=1;
+  vector<vector<int>> ans;
+  for(int i=1; i<=n; i++){
+    vector<int> temp;
+    for(int k=1; k<=n-i; k++){
+      temp.push_back(-1);
+    }
+    for (int j = 1; j <= i; j++) {
+      temp.push_back(a);
+      a=(a%9)+1;
+    }
+    ans.push_back(temp);
+  }
+
+  return ans;
+
+}
