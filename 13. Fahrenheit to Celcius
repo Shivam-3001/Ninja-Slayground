@@ -1,0 +1,17 @@
+#include <bits/stdc++.h> 
+vector<vector<int>> fahrenheitToCelsius(int s, int e, int w)
+{
+	//type your code here
+	vector<vector<int>> ans;
+	for(int i=s; i<=e; i+=w){
+		vector<int> temp;
+		int fahreinheit=i;
+		int celcius=((fahreinheit-32)*5)/9;
+		temp.push_back(fahreinheit);
+		temp.push_back(celcius);
+
+		ans.push_back(temp);
+	}
+
+	return ans;
+}
