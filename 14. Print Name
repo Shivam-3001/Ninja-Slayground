@@ -1,0 +1,8 @@
+#include <bits/stdc++.h> 
+void printName(string s){
+    // Write your code here.
+    int i=5;
+    while(i--){
+        cout<<s<<endl;
+    }
+}
